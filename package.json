@@ -1,0 +1,23 @@
+{
+  "name": "node-lexan",
+  "version": "1.0.0",
+  "description": "A lexical analyzer for nodejs.",
+  "main": "index.js",
+  "scripts": {
+    "cover": "NODE_PATH=. NODE_ENV=test ./node_modules/.bin/istanbul cover --report lcov -- node_modules/mocha/bin/_mocha --recursive test --check-leaks --sort --reporter spec",
+    "lint": "NODE_PATH=. ./node_modules/eslint/bin/eslint.js src",
+    "test": "npm run-script cover && npm run-script lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kkragenbrink/node-lexan"
+  },
+  "author": "Kevin Kragenbrink <kevin@gaikai.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^1.10.3",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5"
+  }
+}
