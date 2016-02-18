@@ -52,5 +52,16 @@ describe ('A token describes its contents', () => {
         assert.throws(() => {
             new Token('{"foo":"bar"}');
         }, 'Invalid type.');
-    })
+    });
+
+    it ('should restrict modifying value and type', () => {
+        let instance = new Token('value', 'type');
+        assert.throws(() => {
+            instance.value = 'value1';
+        });
+
+        assert.throws(() => {
+            instance.type = 'type1';
+        });
+    });
 });
