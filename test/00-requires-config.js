@@ -20,6 +20,16 @@ describe ('A token describes its contents', () => {
         assert.equal(instance.type, 'type');
     });
 
+    it ('should require a type which must be a string.', () => {
+        assert.throws(() => {
+            new Token('value');
+        }, 'Invalid type.');
+
+        assert.throws(() => {
+            new Token('value', {});
+        }, 'Invalid type.');
+    });
+
     it ('should serialize to JSON', () => {
         let instance = new Token('value', 'type');
         let json = JSON.stringify(instance);
@@ -31,4 +41,16 @@ describe ('A token describes its contents', () => {
         assert.equal(instance.value, 'value');
         assert.equal(instance.type, 'type');
     });
+
+    it ('should allow valid json as token values', () => {
+        let instance = new Token('{"foo":"bar"}', 'foobar');
+        assert.equal(instance.value, '{"foo":"bar"}');
+        assert.equal(instance.type, 'foobar');
+    });
+
+    it ('should require a type even if a json string value is passed in', () => {
+        assert.throws(() => {
+            new Token('{"foo":"bar"}');
+        }, 'Invalid type.');
+    })
 });
