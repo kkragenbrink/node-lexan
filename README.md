@@ -1,10 +1,10 @@
 # Lexan
 Lexical Analyzer
 
-[![Build Status](https://travis-ci.org/kkragenbrink/lexan.svg?branch=master)](https://travis-ci.org/kkragenbrink/lexan)
-[![Coverage Status](https://coveralls.io/repos/kkragenbrink/lexan/badge.svg?branch=master&service=github)](https://coveralls.io/github/kkragenbrink/lexan?branch=master)
-[![Dependency Status](https://david-dm.org/kkragenbrink/jasmine.svg)](https://david-dm.org/kkragenbrink/lexan)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/kkragenbrink/lexan/blob/master/LICENSE.txt)
+[![Build Status](https://travis-ci.org/kkragenbrink/node-lexan.svg?branch=master)](https://travis-ci.org/kkragenbrink/node-lexan)
+[![Coverage Status](https://coveralls.io/repos/kkragenbrink/node-lexan/badge.svg?branch=master&service=github)](https://coveralls.io/github/kkragenbrink/node-lexan?branch=master)
+[![Dependency Status](https://david-dm.org/kkragenbrink/node-lexan.svg)](https://david-dm.org/kkragenbrink/node-lexan)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/kkragenbrink/node-lexan/blob/master/LICENSE.txt)
 
 [![NPM](https://nodei.co/npm/lexan.png?downloads=true)](https://nodei.co/npm/lexan/)
 
