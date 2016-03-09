@@ -1,5 +1,5 @@
 {
-  "name": "node-lexan",
+  "name": "lexan",
   "version": "1.0.0",
   "description": "A lexical analyzer for nodejs.",
   "main": "index.js",
