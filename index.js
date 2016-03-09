@@ -1,1 +1,1 @@
-module.exports = require('./lib/Discovery');
+module.exports = require('./lib/Lexer');
